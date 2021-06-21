@@ -1,0 +1,193 @@
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Red);
+    background-image: url(../assets/images/bg-intro-mobile.png);
+    display: -ms-grid;
+    display: grid;
+    align-content: center;
+}
+
+@media screen and (min-width: 1090px) {
+    body {
+        max-width: 1100px;
+        background-image: url(../assets/images/bg-intro-desktop.png);
+    }
+}
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+.main {
+    padding: 60px 25px 20px;
+    display: -ms-grid;
+    display: grid;
+}
+
+@media screen and (min-width: 1090px) {
+    .main {
+        -ms-grid-columns: 1fr 10px 1fr;
+        grid-template-columns: 1fr 1fr;
+        -moz-column-gap: 10px;
+             column-gap: 10px;
+    }
+}
+
+.article,
+.section {
+    padding: 0 0 20px;
+}
+
+.article {
+    text-align: center;
+    color: white;
+}
+
+@media screen and (min-width: 1090px) {
+    .article {
+        width: 98%;
+        text-align: left;
+        -ms-grid-row-align: center;
+            align-self: center;
+    }
+}
+
+.article__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1090px) {
+    .article__title {
+        font-size: 3rem;
+    }
+}
+
+.article__text {
+    font-size: .9rem;
+    line-height: 25px;
+}
+
+.section__title,
+.form {
+    border-radius: 10px;
+    box-shadow: 0px 6px 0 0 rgb(0, 0, 0, .20);
+}
+
+.section__title {
+    margin-bottom: 20px;
+    padding: 15px 50px;
+    font-size: .9rem;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    background-color: var(--Blue);
+    line-height: 25px;
+}
+
+.section__span {
+    font-weight: 700;
+}
+
+.form {
+    padding: 20px;
+    background-color: white;
+}
+
+@media screen and (min-width: 1090px) {
+    .form {
+        padding: 35px;
+    }
+}
+
+.form__input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 20px 25px;
+    font-size: .8rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: var(--Dark-Blue);
+    border: 1px solid hsla(246, 25%, 77%, 0.527);
+    outline: none;
+}
+
+.form__link {
+    display: block;
+    padding: 15px 0;
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--Green);
+    box-shadow: 0px 4px 0 0 hsl(154, 58%, 44%);
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.form__terms {
+    margin-bottom: 0;
+    padding: 0 15px;
+    font-size: .7rem;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    line-height: 22px;
+}
+
+.form__terms-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--Red);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+
+@media screen and (min-width: 1090px) {
+    .attribution {
+        font-size: .9rem;
+    }
+}
+
+.attribution__link { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.form__input::-moz-placeholder {
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--Dark-Blue);
+    opacity: .8;
+}
+
+.form__input:-ms-input-placeholder {
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--Dark-Blue);
+    opacity: .8;
+}
+
+.form__input::placeholder {
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--Dark-Blue);
+    opacity: .8;
+}
+
+@media screen and (min-width: 1090px) {
+    .form__link:hover {
+        background-color: hsla(154, 59%, 51%, 0.658);
+        box-shadow: 0px 4px 0 0 hsla(154, 58%, 44%, 0.692);
+    }
+}
